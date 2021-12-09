@@ -3,13 +3,13 @@ def par(n1):
     if n1%2==0:
         print('eh par')
     else:
-        printf('nao eh par')
+        print('nao eh par')
 
 
 
 #main principal que rodará por toda a execução
 def main() -> None:
-    num1=int(input("digite o primeiro numero pra saber se eh par:"))
+    num1=float(input("digite o primeiro numero pra saber se eh par:"))
     #chama a função par
     par(num1)
 

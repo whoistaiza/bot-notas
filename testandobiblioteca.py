@@ -3,8 +3,9 @@ from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 def help_command(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
-    update.message.reply_text('Help!')
-
+    update.message.reply_text('hello')
+def notas_command(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text('Qual disciplina você quer saber a nota?')
 
 def main() -> None:
     """Start the bot."""
@@ -16,6 +17,9 @@ def main() -> None:
 
     # on different commands - answer in Telegram
     dispatcher.add_handler(CommandHandler("help", help_command))
+    dispatcher.add_handler(CommandHandler("notas", notas_command))
+
+
 
     # Start the Bot
     updater.start_polling()
