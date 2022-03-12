@@ -3,7 +3,7 @@ from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 def help_command(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
-    update.message.reply_text('hello')
+    update.message.reply_text('hello felipe')
 def notas_command(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Qual disciplina você quer saber a nota?')
 
