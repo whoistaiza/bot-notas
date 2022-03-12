@@ -18,3 +18,5 @@ def main() -> None:
 #chama o main principal
 if __name__ == '__main__':
     main()
+
+#TESTE GITHUB
