@@ -13,8 +13,8 @@ import telegram.ext
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    # updater = Updater("5083712186:AAFjxTsQz8QzIsKGCNCNt39vjNhM9_7jKJ0")
-    bot = telegram.Bot(token='5083712186:AAFjxTsQz8QzIsKGCNCNt39vjNhM9_7jKJ0')
+    # updater = Updater("")
+    bot = telegram.Bot(token='')
     print(bot.get_me())
     updates = bot.get_updates()
     print(updates[0])
